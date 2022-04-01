@@ -9,7 +9,7 @@ export function Tweet(props: TweetProps) {
   // quando o html tem mais de uma linha, nós colocamos parentese
   return (
     <div>
-      <p>Tweet</p>
+      {/* <p>Tweet</p> */}
       {/* Para usar js com html é necessario o uso das chaves */}
       <p>{props.text}</p>
     </div>
