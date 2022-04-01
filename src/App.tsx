@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Tweet } from "./components/Tweet"
 
-import './App.css';
+// import './App.css';
 
 function App() {
   // useState cria uma variável que é monitorada pelo compnente, ou seja, toda vez que essa variável muda o seu valo, o componente é remontado/renderizado com as novas informaçoes daquela variável
@@ -23,7 +23,18 @@ function App() {
         return <Tweet text={tweet} />
       })}
 
-      <button onClick={createTweet}>Adicionar tweet</button>
+      <button
+        onClick={createTweet}
+        // conseguimos colocar css dentro do javascript
+        style={{
+          backgroundColor: '#8257e6',
+          border: 0,
+          padding: '6px 12px',
+          color: '#FFF'
+        }}
+      >
+        Adicionar tweet
+      </button>
     </div>
   )
 }
