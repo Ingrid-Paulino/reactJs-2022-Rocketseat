@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Tweet } from "./components/Tweet"
+import { AppRoutes } from "./Routes";
 
 // import './App.css';
 
@@ -18,6 +19,8 @@ function App() {
 
   return(
     <div>
+      <AppRoutes />
+
       {/* <Tweet text="Tweet 1" /> */}
       {tweets.map((tweet) => {
         return <Tweet text={tweet} />
@@ -26,6 +29,7 @@ function App() {
       <button
         onClick={createTweet}
         // conseguimos colocar css dentro do javascript
+        // CSS in JS
         style={{
           backgroundColor: '#8257e6',
           border: 0,
